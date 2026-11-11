@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+        <!-- SEÇÃO: 01. METADADOS / SEO / FONTES / ESTILOS -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="Portfólio profissional de Jesi — Desenvolvedor Front-end.">
+        <meta name="theme-color" content="#7c3aed">
+
+        <title>Jesi — Front-end Developer</title>
+
+        <!-- Favicon -->
+        <link href="imagens/favicon.png" rel="icon" type="image/png">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+                rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+        <!-- CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/command.css" rel="stylesheet">
+</head>
+
+<body>
+
+        <canvas aria-hidden="true" id="starsCanvas"></canvas>
+
+        <!-- BRILHO QUE ACOMPANHA O CURSOR -->
+        <div class="cursor-glow"></div>
+
+        <!-- HEADER / NAVEGAÇÃO -->
+        <!-- SEÇÃO: 02. HEADER / NAVEGAÇÃO -->
+        <header class="header" id="header">
+                <div class="container nav">
+
+                        <a class="logo" href="#inicio">
+                                <img alt="Jesi" class="logo-img" src="imagens/logo.png">
+                        </a>
+
+                        <!-- SUBSEÇÃO: NAVEGAÇÃO PRINCIPAL -->
+                        <nav class="nav-menu" id="navMenu">
+                                <a class="active nav-link" href="#inicio">Início</a>
+                                <a class="nav-link" href="#sobre">Sobre</a>
+                                <a class="nav-link" href="#skills">Skills</a>
+                                <a class="nav-link" href="#projetos">Projetos</a>
+                                <a class="nav-link" href="#servicos">Serviços</a>
+                                <a class="nav-link" href="#experiencia">Experiência</a>
+                                <a class="nav-link" href="#contato">Contato</a>
+                        </nav>
+
+                        <div class="nav-actions">
+                                <button aria-label="Abrir comandos" class="command-trigger" id="commandTrigger"
+                                        type="button">
+                                        <kbd>Ctrl</kbd>
+                                        <kbd>K</kbd>
+                                </button>
+
+                                <a class="btn btn-gradient btn-small" href="#contato">
+                                        Vamos conversar
+                                        <i class="fa fa-comments"></i>
+                                </a>
+
+                                <button aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menu"
+                                        class="menu-toggle" id="menuToggle" type="button">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                </button>
+                        </div>
+
+                </div>
+        </header>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <!-- SEÇÃO: 03. CONTEÚDO PRINCIPAL -->
+        <main>
+
+                <!-- HERO — APRESENTAÇÃO -->
+                <!-- SEÇÃO: 01. HERO / INÍCIO -->
+                <section class="hero section" id="inicio">
+
+                        <div class="hero-bg">
+                                <div class="orb orb-1"></div>
+                                <div class="orb orb-2"></div>
+                                <div class="orb orb-3"></div>
+                        </div>
+
+                        <div class="container hero-grid">
+
+                                <div class="hero-content reveal">
+
+                                        <div class="availability">
+                                                <span></span>
+                                                Disponível para novos projetos
+                                        </div>
+
+                                        <p class="eyebrow">Olá, eu sou</p>
+
+                                        <h1>
+                                                Jesiel Vieira
+                                                <span class="gradient-text">Desenvolvedor</span>
+                                                Front-end.
+                                        </h1>
+
+                                        <p class="hero-description">
+                                                Transformo ideias em experiências digitais modernas,
+                                                rápidas e visualmente marcantes. Desenvolvimento focado em
+                                                <strong>design, performance e experiência.</strong>
+                                        </p>
+
+                                        <div class="hero-buttons">
+
+                                                <a class="btn btn-gradient" href="#projetos">
+                                                        Ver projetos
+                                                        <i class="fa-solid fa-up-right-from-square"></i>
+                                                </a>
+
+                                                <a class="btn btn-outline" href="#contato">
+                                                        Entrar em contato
+                                                </a>
+
+                                                <a aria-label="Baixar currículo em PDF" class="btn btn-curriculo"
+                                                        download="curriculo-jesiel-vieira.pdf"
+                                                        href="assets/docs/curriculo.pdf">
+
+                                                        <i aria-hidden="true" class="fa-file-pdf fa-solid"></i>
+
+                                                        <span>Baixar currículo</span>
+
+                                                        <i aria-hidden="true"
+                                                                class="btn-curriculo-icon fa-download fa-solid"></i>
+                                                </a>
+
+                                        </div>
+
+                                        <div aria-label="Diferenciais" class="hero-meta">
+
+                                                <span class="meta-chip">
+                                                        <i class="fa-bolt fa-solid"></i>
+                                                        Performance first
+                                                </span>
+
+                                                <span class="meta-chip">
+                                                        <i class="fa-layer-group fa-solid"></i>
+                                                        UI + Code
+                                                </span>
+
+                                                <span class="meta-chip">
+                                                        <i class="fa-code fa-solid"></i>
+                                                        Clean architecture
+                                                </span>
+
+                                        </div>
+
+                                        <div class="hero-social">
+
+                                                <span>Encontre-me:</span>
+
+                                                <a href="#">
+                                                        <i class="fa-brands fa-github"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                        <i class="fa-brands fa-linkedin-in"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                        <i class="fa-brands fa-instagram"></i>
+                                                </a>
+
+                                                <a href="#">
+                                                        <i class="fa-behance fa-brands"></i>
+                                                </a>
+
+                                        </div>
+
+                                </div>
+
+                                <div class="hero-visual reveal">
+
+                                        <div class="code-window">
+
+                                                <div class="window-top">
+                                                        <div>
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                        </div>
+
+                                                        <small>portfolio.js</small>
+
+                                                        <i class="fa-code fa-solid"></i>
+                                                </div>
+
+                                                <div class="code-body">
+                                                        <pre><code><b>const</b> developer = {
+name: <em>"Jesiel"</em>,
+role: <em>"Front-end Developer"</em>,
+skills: [
+<em>"HTML"</em>,
+<em>"CSS"</em>,
+<em>"JavaScript"</em>,
+<em>"WordPress"</em>
+],
+available: <i>true</i>
+};
+<b>export default</b> developer;</code></pre>
+                                                </div>
+
+                                                <div class="window-footer">
+                                                        <span>● System online</span>
+                                                        <span>v2.0.26</span>
+                                                </div>
+
+                                        </div>
+
+                                        <div class="floating-card html">
+                                                <i class="fa-brands fa-html5"></i>
+                                                HTML5
+                                        </div>
+
+                                        <div class="css floating-card">
+                                                <i class="fa-brands fa-css3-alt"></i>
+                                                CSS3
+                                        </div>
+
+                                        <div class="floating-card js">
+                                                <i class="fa-brands fa-js"></i>
+                                                JavaScript
+                                        </div>
+
+                                </div>
+
+                        </div>
+
+                        <a aria-label="Ir para a seção Sobre mim" class="scroll-down" href="#sobre">
+                                <span>Role para explorar</span>
+                                <i aria-hidden="true" class="fa-arrow-down fa-solid"></i>
+                        </a>
+
+                </section>
+
+                <!-- ESTATÍSTICAS -->
+                <!-- SEÇÃO: 02. ESTATÍSTICAS -->
+                <section class="stats">
+                        <div class="container stats-grid">
+
+                                <div class="stat">
+                                        <strong data-count="50">0</strong>
+                                        <span>Projetos</span>
+                                </div>
+
+                                <div class="stat">
+                                        <strong data-count="30">0</strong>
+                                        <span>Clientes</span>
+                                </div>
+
+                                <div class="stat">
+                                        <strong data-count="5">0</strong>
+                                        <span>Anos de experiência</span>
+                                </div>
+
+                                <div class="stat">
+                                        <strong data-count="100">0</strong>
+                                        <span>% dedicação</span>
+                                </div>
+
+                        </div>
+                </section>
+
+                <!-- 01 — SOBRE MIM -->
+                <!-- SEÇÃO: 03. SOBRE -->
+                <section class="section" id="sobre">
+                        <div class="container">
+
+                                <div class="reveal section-title">
+                                        <span>01 — SOBRE MIM</span>
+
+                                        <h2>
+                                                Código com propósito,
+                                                <br>
+                                                <b>design com impacto.</b>
+                                        </h2>
+
+                                        <p>
+                                                Desenvolvimento moderno com foco em experiências digitais.
+                                        </p>
+                                </div>
+
+                                <div class="about-grid">
+
+                                        <div class="about-card reveal">
+
+                                                <div class="avatar">
+                                                        <img alt="Jesi — Desenvolvedor Front-end"
+                                                                src="imagens/profile.webp">
+                                                </div>
+
+                                                <div class="about-name">Jesiel Vieira</div>
+
+                                                <div class="about-role">Front-end Developer</div>
+
+                                                <div class="about-status">
+                                                        <span></span>
+                                                        Disponível
+                                                </div>
+
+                                                <div class="experience">
+                                                        <span id="experience-counter">0</span>
+                                                        +
+                                                        <small>anos de experiência</small>
+                                                </div>
+
+                                        </div>
+
+                                        <div class="about-content reveal">
+
+                                                <p class="big">
+                                                        Sou desenvolvedor Front-end apaixonado por transformar conceitos
+                                                        em produtos digitais elegantes e funcionais.
+                                                </p>
+
+                                                <p>
+                                                        Crio interfaces responsivas, acessíveis, performáticas e fáceis
+                                                        de manter, combinando desenvolvimento, UX e atenção aos
+                                                        detalhes.
+                                                </p>
+
+                                                <div class="highlights">
+
+                                                        <div>
+                                                                <i class="fa-bolt fa-solid"></i>
+                                                                <span>Performance</span>
+                                                        </div>
+
+                                                        <div>
+                                                                <i class="fa-mobile-screen fa-solid"></i>
+                                                                <span>Responsividade</span>
+                                                        </div>
+
+                                                        <div>
+                                                                <i class="fa-shield-halved fa-solid"></i>
+                                                                <span>Segurança</span>
+                                                        </div>
+
+                                                        <div>
+                                                                <i class="fa-code fa-solid"></i>
+                                                                <span>Código limpo</span>
+                                                        </div>
+
+                                                </div>
+
+                                        </div>
+
+                                </div>
+                        </div>
+                </section>
+
+                <!-- 02 — SKILLS -->
+                <!-- SEÇÃO: 04. HABILIDADES / STACK -->
+                <section class="alt section" id="skills">
+                        <div class="container">
+
+                                <div class="center reveal section-title">
+                                        <span>02 — SKILLS</span>
+
+                                        <h2>
+                                                Tecnologias que fazem parte do
+                                                <b>meu stack.</b>
+                                        </h2>
+
+                                        <p>
+                                                Ferramentas modernas para construir experiências robustas.
+                                        </p>
+                                </div>
+
+                                <div class="skills-grid">
+
+                                        <div class="reveal skill">
+                                                <div class="skill-top">
+                                                        <span>
+                                                                <i class="fa-brands fa-html5"></i>
+                                                                HTML5
+                                                        </span>
+                                                        <b>95%</b>
+                                                </div>
+                                                <div class="progress">
+                                                        <i style="width: 95%"></i>
+                                                </div>
+                                        </div>
+
+                                        <div class="reveal skill">
+                                                <div class="skill-top">
+                                                        <span>
+                                                                <i class="fa-brands fa-css3-alt"></i>
+                                                                CSS3
+                                                        </span>
+                                                        <b>95%</b>
+                                                </div>
+                                                <div class="progress">
+                                                        <i style="width: 95%"></i>
+                                                </div>
+                                        </div>
+
+                                        <div class="reveal skill">
+                                                <div class="skill-top">
+                                                        <span>
+                                                                <i class="fa-brands fa-js"></i>
+                                                                JavaScript
+                                                        </span>
+                                                        <b>90%</b>
+                                                </div>
+                                                <div class="progress">
+                                                        <i style="width: 90%"></i>
+                                                </div>
+                                        </div>
+
+                                        <div class="reveal skill">
+                                                <div class="skill-top">
+                                                        <span>
+                                                                <i class="fa-brands fa-wordpress"></i>
+                                                                WordPress
+                                                        </span>
+                                                        <b>92%</b>
+                                                </div>
+                                                <div class="progress">
+                                                        <i style="width: 92%"></i>
+                                                </div>
+                                        </div>
+
+                                        <div class="reveal skill">
+                                                <div class="skill-top">
+                                                        <span>
+                                                                <i class="fa-brands fa-git-alt"></i>
+                                                                Git
+                                                        </span>
+                                                        <b>88%</b>
+                                                </div>
+                                                <div class="progress">
+                                                        <i style="width: 88%"></i>
+                                                </div>
+                                        </div>
+
+                                        <div class="reveal skill">
+                                                <div class="skill-top">
+                                                        <span>
+                                                                <i class="fa-brands fa-node-js"></i>
+                                                                Node.js
+                                                        </span>
+                                                        <b>96%</b>
+                                                </div>
+                                                <div class="progress">
+                                                        <i style="width: 96%"></i>
+                                                </div>
+                                        </div>
+
+                                </div>
+                        </div>
+                </section>
+
+                <!-- 03 — PROJETOS -->
+                <!-- SEÇÃO: 05. PROJETOS -->
+                <section class="section" id="projetos">
+                        <div class="container">
+
+                                <div class="reveal section-title">
+                                        <span>03 — PROJETOS</span>
+
+                                        <h2>
+                                                Trabalhos que unem
+                                                <b>design e tecnologia.</b>
+                                        </h2>
+                                </div>
+
+                                <div class="project-search reveal">
+                                        <i aria-hidden="true" class="fa-magnifying-glass fa-solid"></i>
+
+                                        <input aria-label="Buscar projeto" autocomplete="off" id="projectSearch"
+                                                placeholder="Buscar projeto..." type="search">
+
+                                        <kbd>⌘ K</kbd>
+                                </div>
+
+                                <div class="filters reveal">
+                                        <button class="active" data-filter="all">Todos</button>
+                                        <button data-filter="web">Websites</button>
+                                        <button data-filter="landing">Landing Pages</button>
+                                        <button data-filter="wordpress">WordPress</button>
+                                </div>
+
+                                <div class="projects-grid">
+
+                                        <!-- PROJETO: NEXUS LOG -->
+                                        <article class="project reveal" data-category="web">
+
+                                                <div class="p1 project-image">
+                                                        <img alt="Transportadora" src="imagens/nexus.webp">
+
+                                                        <button class="view-project"
+                                                                data-description="Website institucional desenvolvido para uma transportadora, com foco em apresentação dos serviços, credibilidade da empresa e uma experiência de navegação moderna e responsiva."
+                                                                data-title="Transportadora">
+                                                                +
+                                                        </button>
+                                                </div>
+
+                                                <div class="project-info">
+                                                        <small>WEBSITE · 2026</small>
+
+                                                        <h3>Nexus Log</h3>
+
+                                                        <p>
+                                                                Website institucional desenvolvido para uma
+                                                                transportadora.
+                                                        </p>
+
+                                                        <div class="project-tech">
+                                                                <em>HTML</em>
+                                                                <em>CSS</em>
+                                                                <em>JavaScript</em>
+
+                                                                <a class="project-link" href="projetos/nexus/index.html"
+                                                                        rel="noopener noreferrer" target="_blank">
+                                                                        Ver Projeto
+                                                                        <i
+                                                                                class="fa-arrow-up-right-from-square fa-solid"></i>
+                                                                </a>
+                                                        </div>
+                                                </div>
+
+                                        </article>
+
+                                        <!-- PROJETO: PASSO -->
+                                        <article class="project reveal" data-category="web">
+
+                                                <div class="p3 project-image">
+                                                        <img alt="Website" src="imagens/passo.webp">
+
+                                                        <button class="view-project"
+                                                                data-description="Website institucional desenvolvido para o segmento de tênis esportivos, com apresentação de produtos, informações da empresa e experiência moderna em HTML, CSS e JavaScript."
+                                                                data-title="Passo">
+                                                                +
+                                                        </button>
+                                                </div>
+
+                                                <div class="project-info">
+                                                        <small>E-COMMERCE · 2026</small>
+
+                                                        <h3>Passo</h3>
+
+                                                        <p>
+                                                                Website desenvolvido para uma empresa de tênis
+                                                                esportivos.
+                                                        </p>
+
+                                                        <div class="project-tech">
+                                                                <em>HTML</em>
+                                                                <em>CSS</em>
+                                                                <em>JavaScript</em>
+
+                                                                <a class="project-link" href="projetos/passo/home.html"
+                                                                        rel="noopener noreferrer" target="_blank">
+                                                                        Ver Projeto
+                                                                        <i
+                                                                                class="fa-arrow-up-right-from-square fa-solid"></i>
+                                                                </a>
+                                                        </div>
+                                                </div>
+
+                                        </article>
+
+                                        <!-- PROJETO: PETLOVE -->
+                                        <article class="project reveal" data-category="web">
+
+                                                <div class="p3 project-image">
+                                                        <img alt="Petlove - Pet Shop e Cuidados Animais"
+                                                                src="imagens/petlove.png">
+
+                                                        <button class="view-project"
+                                                                data-description="Website desenvolvido para uma empresa de pet shop e produtos para animais, com apresentação de produtos, serviços, informações da empresa e uma experiência de navegação moderna e responsiva."
+                                                                data-title="Petlove">
+                                                                +
+                                                        </button>
+                                                </div>
+
+                                                <div class="project-info">
+                                                        <small>E-COMMERCE · 2026</small>
+
+                                                        <h3>Petlove</h3>
+
+                                                        <p>
+                                                                Website desenvolvido para pet shop e cuidados animais.
+                                                        </p>
+
+                                                        <div class="project-tech">
+                                                                <em>HTML</em>
+                                                                <em>CSS</em>
+                                                                <em>JavaScript</em>
+
+                                                                <a class="project-link"
+                                                                        href="projetos/petlove/home.html"
+                                                                        rel="noopener noreferrer" target="_blank">
+                                                                        Ver Projeto
+                                                                        <i
+                                                                                class="fa-arrow-up-right-from-square fa-solid"></i>
+                                                                </a>
+                                                        </div>
+                                                </div>
+
+                                        </article>
+
+                                        <!-- PROJETO: SUPERCAR -->
+                                        <article class="project reveal" data-category="web">
+
+                                                <div class="p3 project-image">
+                                                        <!-- Substitua imagens/vertice.webp pela imagem de capa do Supercar. -->
+                                                        <img alt="Supercar Gallery — coleção de supercarros"
+                                                                src="imagens/supercar.webp">
+
+                                                        <button class="view-project"
+                                                                data-description="Galeria interativa de supercarros que combina design premium, fichas técnicas detalhadas, animações modernas e navegação responsiva para uma experiência imersiva."
+                                                                data-technologies="HTML,CSS,JavaScript,Tailwind CSS"
+                                                                data-title="Supercar Gallery">
+                                                                +
+                                                        </button>
+                                                </div>
+
+                                                <div class="project-info">
+                                                        <small>WEBSITE · 2026</small>
+
+                                                        <h3>Supercar Gallery</h3>
+
+                                                        <p>
+                                                                Galeria de supercarros com fichas técnicas e navegação
+                                                                interativa.
+                                                        </p>
+
+                                                        <div class="project-tech">
+                                                                <em>HTML</em>
+                                                                <em>CSS</em>
+                                                                <em>JavaScript</em>
+                                                                <em>Tailwind CSS</em>
+
+                                                                <a class="project-link"
+                                                                        href="projetos/supercar/index.html"
+                                                                        rel="noopener noreferrer" target="_blank">
+                                                                        Ver Projeto
+                                                                        <i
+                                                                                class="fa-arrow-up-right-from-square fa-solid"></i>
+                                                                </a>
+                                                        </div>
+                                                </div>
+
+                                        </article>
+
+                                </div>
+                        </div>
+                </section>
+
+                <!-- 04 — SERVIÇOS -->
+                <!-- SEÇÃO: 06. SERVIÇOS -->
+                <section class="alt section services" id="servicos">
+                        <div class="container">
+
+                                <div class="center reveal section-title">
+                                        <span>04 — SERVIÇOS</span>
+
+                                        <h2>
+                                                O que posso fazer pelo
+                                                <b>seu projeto.</b>
+                                        </h2>
+                                </div>
+
+                                <div class="services-grid">
+
+                                        <div class="reveal service">
+                                                <span>01</span>
+                                                <i class="fa-laptop-code fa-solid"></i>
+
+                                                <h3>Soluções Web</h3>
+
+                                                <p>
+                                                        Sites modernos, responsivos e personalizados.
+                                                </p>
+
+                                                <a href="#contato">
+                                                        Quero este serviço
+                                                        <i class="fa-arrow-right fa-solid"></i>
+                                                </a>
+                                        </div>
+
+                                        <div class="reveal service">
+                                                <span>02</span>
+                                                <i class="fa-palette fa-solid"></i>
+
+                                                <h3>Landing Pages</h3>
+
+                                                <p>
+                                                        Páginas estratégicas focadas em conversão.
+                                                </p>
+
+                                                <a href="#contato">
+                                                        Quero este serviço
+                                                        <i class="fa-arrow-right fa-solid"></i>
+                                                </a>
+                                        </div>
+
+                                        <div class="reveal service">
+                                                <span>03</span>
+                                                <i class="fa-brands fa-wordpress"></i>
+
+                                                <h3>WordPress</h3>
+
+                                                <p>
+                                                        Sites personalizados e fáceis de gerenciar.
+                                                </p>
+
+                                                <a href="#contato">
+                                                        Quero este serviço
+                                                        <i class="fa-arrow-right fa-solid"></i>
+                                                </a>
+                                        </div>
+
+                                        <div class="reveal service">
+                                                <span>04</span>
+                                                <i class="fa-gauge-high fa-solid"></i>
+
+                                                <h3>Otimização</h3>
+
+                                                <p>
+                                                        Mais velocidade, SEO e melhor experiência.
+                                                </p>
+
+                                                <a href="#contato">
+                                                        Quero este serviço
+                                                        <i class="fa-arrow-right fa-solid"></i>
+                                                </a>
+                                        </div>
+
+                                </div>
+                        </div>
+                </section>
+
+                <!-- 05 — EXPERIÊNCIA -->
+                <!-- SEÇÃO: 07. EXPERIÊNCIA -->
+                <section class="section" id="experiencia">
+                        <div class="container">
+
+                                <div class="reveal section-title">
+                                        <span>05 — EXPERIÊNCIA</span>
+
+                                        <h2>
+                                                Minha jornada no
+                                                <b>desenvolvimento.</b>
+                                        </h2>
+                                </div>
+
+                                <div class="timeline">
+
+                                        <div class="reveal timeline-item">
+                                                <div class="timeline-dot"></div>
+
+                                                <span>2026 — ATUAL</span>
+
+                                                <h3>Senior Front-end Developer</h3>
+
+                                                <h4>Projetos independentes</h4>
+
+                                                <p>
+                                                        Desenvolvimento de interfaces modernas, sites institucionais,
+                                                        landing pages e soluções WordPress.
+                                                </p>
+                                        </div>
+
+                                        <div class="reveal timeline-item">
+                                                <div class="timeline-dot"></div>
+
+                                                <span>2023 — 2025</span>
+
+                                                <h3>Front-end Developer</h3>
+
+                                                <h4>Web Projects</h4>
+
+                                                <p>
+                                                        Construção de experiências digitais responsivas e integração com
+                                                        APIs.
+                                                </p>
+                                        </div>
+
+                                        <div class="reveal timeline-item">
+                                                <div class="timeline-dot"></div>
+
+                                                <span>2020 — 2022</span>
+
+                                                <h3>Web Developer</h3>
+
+                                                <h4>Freelancer</h4>
+
+                                                <p>
+                                                        Primeiros projetos profissionais e criação de websites para
+                                                        diferentes segmentos.
+                                                </p>
+                                        </div>
+
+                                </div>
+                        </div>
+                </section>
+
+                <!-- 06 — FAQ -->
+                <!-- SEÇÃO: 08. FAQ -->
+                <section class="faq section">
+                        <div class="container">
+
+                                <div class="center reveal section-title">
+                                        <span>06 — FAQ</span>
+
+                                        <h2>
+                                                Perguntas
+                                                <b>frequentes.</b>
+                                        </h2>
+                                </div>
+
+                                <div class="faq-list">
+
+                                        <div class="faq-item reveal">
+                                                <button>
+                                                        Quanto custa um site?
+                                                        <i class="fa-plus fa-solid"></i>
+                                                </button>
+
+                                                <div>
+                                                        <p>
+                                                                O valor depende do escopo, número de páginas,
+                                                                funcionalidades e integrações necessárias.
+                                                        </p>
+                                                </div>
+                                        </div>
+
+                                        <div class="faq-item reveal">
+                                                <button>
+                                                        Você trabalha com WordPress?
+                                                        <i class="fa-plus fa-solid"></i>
+                                                </button>
+
+                                                <div>
+                                                        <p>
+                                                                Sim. Desenvolvo sites personalizados, responsivos e
+                                                                otimizados em WordPress.
+                                                        </p>
+                                                </div>
+                                        </div>
+
+                                        <div class="faq-item reveal">
+                                                <button>
+                                                        O site será responsivo?
+                                                        <i class="fa-plus fa-solid"></i>
+                                                </button>
+
+                                                <div>
+                                                        <p>
+                                                                Sim. Todos os projetos são construídos pensando em
+                                                                desktop,
+                                                                tablet e dispositivos móveis.
+                                                        </p>
+                                                </div>
+                                        </div>
+
+                                        <div class="faq-item reveal">
+                                                <button>
+                                                        Você faz manutenção?
+                                                        <i class="fa-plus fa-solid"></i>
+                                                </button>
+
+                                                <div>
+                                                        <p>
+                                                                Sim. Também posso trabalhar com manutenção,
+                                                                melhorias e otimizações contínuas.
+                                                        </p>
+                                                </div>
+                                        </div>
+
+                                </div>
+                        </div>
+                </section>
+
+                <!-- 07 — CONTATO -->
+                <!-- SEÇÃO: 09. CONTATO -->
+                <section class="contact section" id="contato">
+                        <div class="contact-grid container">
+
+                                <div class="contact-content reveal">
+
+                                        <span>07 — CONTATO</span>
+
+                                        <h2>
+                                                Vamos transformar sua ideia em
+                                                <b>algo incrível.</b>
+                                        </h2>
+
+                                        <p>
+                                                Tem um projeto em mente? Entre em contato e vamos conversar.
+                                        </p>
+
+                                        <div class="contact-links">
+
+                                                <a href="mailto:jesielvieira.dev@gmail.com">
+                                                        <i class="fa-envelope fa-solid"></i>
+                                                        jesielvieira.dev@gmail.com
+                                                </a>
+
+                                                <a href="#">
+                                                        <i class="fa-brands fa-whatsapp"></i>
+                                                        WhatsApp
+                                                </a>
+
+                                                <a href="#">
+                                                        <i class="fa-location-dot fa-solid"></i>
+                                                        Brasil
+                                                </a>
+
+                                        </div>
+                                </div>
+
+                                <form class="contact-form reveal" id="contactForm">
+
+                                        <div class="form-row">
+
+                                                <label>
+                                                        Nome
+                                                        <input name="name" placeholder="Digite seu nome" required
+                                                                type="text">
+                                                </label>
+
+                                                <label>
+                                                        E-mail
+                                                        <input name="email" placeholder="Digite seu melhor e-mail"
+                                                                required type="email">
+                                                </label>
+
+                                        </div>
+
+                                        <label>
+                                                Assunto
+                                                <input name="subject" placeholder="Ex.: Criação de site" required
+                                                        type="text">
+                                        </label>
+
+                                        <label>
+                                                Mensagem
+                                                <textarea name="message"
+                                                        placeholder="Conte brevemente sobre seu projeto..." required
+                                                        rows="6"></textarea>
+                                        </label>
+
+                                        <button class="btn btn-gradient" type="submit">
+                                                Enviar mensagem
+                                                <i class="fa-paper-plane fa-solid"></i>
+                                        </button>
+
+                                </form>
+
+                        </div>
+                </section>
+
+        </main>
+
+        <!-- COMMAND PALETTE -->
+        <div aria-hidden="true" class="command-palette" id="commandPalette">
+
+                <div aria-label="Command palette" aria-modal="true" class="command-box" role="dialog">
+
+                        <div class="command-search">
+                                <i class="fa-solid fa-terminal"></i>
+
+                                <input autocomplete="off" id="commandInput" placeholder="Digite um comando..."
+                                        type="text">
+
+                                <kbd>ESC</kbd>
+                        </div>
+
+                        <div class="command-list" id="commandList">
+
+                                <button class="active command-item" data-command="go" data-target="#inicio">
+                                        <i class="fa-house fa-solid"></i>
+                                        <span>Ir para início</span>
+                                </button>
+
+                                <button class="command-item" data-command="go" data-target="#sobre">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span>Ir para sobre</span>
+                                </button>
+
+                                <button class="command-item" data-command="go" data-target="#skills">
+                                        <i class="fa-code fa-solid"></i>
+                                        <span>Ir para skills</span>
+                                </button>
+
+                                <button class="command-item" data-command="go" data-target="#projetos">
+                                        <i class="fa-briefcase fa-solid"></i>
+                                        <span>Ir para projetos</span>
+                                </button>
+
+                                <button class="command-item" data-command="go" data-target="#servicos">
+                                        <i class="fa-layer-group fa-solid"></i>
+                                        <span>Ir para serviços</span>
+                                </button>
+
+                                <button class="command-item" data-command="go" data-target="#experiencia">
+                                        <i class="fa-solid fa-timeline"></i>
+                                        <span>Ir para experiência</span>
+                                </button>
+
+                                <button class="command-item" data-command="go" data-target="#contato">
+                                        <i class="fa-paper-plane fa-solid"></i>
+                                        <span>Abrir contato</span>
+                                </button>
+
+                        </div>
+
+                        <div class="command-hint">
+
+                                <span>
+                                        <kbd>↑</kbd>
+                                        <kbd>↓</kbd>
+                                        navegar
+                                </span>
+
+                                <span>
+                                        <kbd>Enter</kbd>
+                                        selecionar
+                                </span>
+
+                        </div>
+
+                </div>
+        </div>
+
+        <!-- MODAL DE PROJETO -->
+        <!-- ===== MODAL ===== -->
+        <div class="modal" id="projectModal">
+
+                <div class="modal-box">
+
+                        <button class="modal-close">&times;</button>
+
+                        <span>PROJETO</span>
+
+                        <h2 id="modalTitle">Projeto</h2>
+
+                        <p id="modalDescription"></p>
+
+                        <div class="modal-tags">
+                                <em>HTML</em>
+                                <em>CSS</em>
+                                <em>JavaScript</em>
+                        </div>
+
+                </div>
+        </div>
+
+        <!-- TOAST DE CONFIRMAÇÃO -->
+        <div class="toast" id="toast">
+                Mensagem enviada com sucesso!
+        </div>
+
+        <!-- BOTÃO VOLTAR AO TOPO -->
+        <button class="back-top" id="backTop">
+                <i class="fa-arrow-up fa-solid"></i>
+        </button>
+
+        <!-- RODAPÉ -->
+        <!-- SEÇÃO: RODAPÉ / CONTATOS / LINKS -->
+        <footer>
+
+                <div class="container footer-grid">
+
+                        <a class="footer-logo" href="#inicio">
+                                <img alt="Jesi" src="imagens/logo.png">
+                        </a>
+
+                        <p>
+                                © 2026 Jesi. Todos os direitos reservados.
+                        </p>
+
+                        <div>
+                                <a href="#">
+                                        <i class="fa-brands fa-github"></i>
+                                </a>
+
+                                <a href="#">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                </a>
+
+                                <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                </a>
+                        </div>
+
+                </div>
+        </footer>
+
+        <!-- SCRIPTS -->
+        <!-- SEÇÃO: JAVASCRIPT / SCRIPTS -->
+        <!-- ========== SCRIPTS ========== -->
+
+        <script src="js/script.js"></script>
+        <script src="js/counter.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/stars.js"></script>
+        <script src="js/command.js"></script>
+
+</body>
+
+</html>
