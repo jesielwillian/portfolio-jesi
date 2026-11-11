@@ -14,7 +14,7 @@
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {theme: {extend: {colors: {carbon: '#06070c', panel: '#0c0e16', line: 'rgba(255,255,255,0.08)', gold: '#f5b301', amber2: '#ff6a00'}, fontFamily: {display: ['Orbitron', 'sans-serif'], body: ['Inter', 'sans-serif'], mono: ['JetBrains Mono', 'monospace']}}}}
+        tailwind.config = { theme: { extend: { colors: { carbon: '#06070c', panel: '#0c0e16', line: 'rgba(255,255,255,0.08)', gold: '#f5b301', amber2: '#ff6a00' }, fontFamily: { display: ['Orbitron', 'sans-serif'], body: ['Inter', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] } } } }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -267,7 +267,7 @@
                 </div>
             </div>
 
-            <div class="max-w-7xl mx-auto px-4 md:px-6 pb-20">
+            <div class="max-w-7xl mx-auto px-4 md:px-6 pb-6">
                 <div class="rounded-3xl overflow-hidden border border-amber-500/30 relative reveal">
                     <div class="absolute inset-0"
                         style="background:linear-gradient(120deg,#140e02,#1a0b05 50%,#12041a)"></div>
@@ -321,7 +321,7 @@
 
         <!-- CARS -->
         <section id="view-cars" class="hidden">
-            <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+            <div class="max-w-7xl mx-auto px-4 md:px-6 pt-10 pb-[1.8rem]">
                 <div class="font-mono text-xs text-amber-400 tracking-widest">/// ROTA FLASK: GET /cars</div>
                 <h2 class="font-display text-3xl md:text-5xl font-black mt-2">The <span class="text-grad">Garagem</span>
                 </h2>
@@ -384,7 +384,7 @@
 
         <!-- FAVORITES -->
         <section id="view-favorites" class="hidden">
-            <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+            <div class="max-w-7xl mx-auto px-4 md:px-6 pt-10 pb-[1.8rem]">
                 <div class="font-mono text-xs text-amber-400 tracking-widest">/// ROTA FLASK: GET /favorites (JOIN
                     cars)</div>
                 <div class="flex flex-wrap items-end justify-between gap-4">
@@ -427,7 +427,7 @@
 
         <!-- LOGIN -->
         <section id="view-login" class="hidden">
-            <div class="max-w-md mx-auto px-4 py-14">
+            <div class="max-w-md mx-auto px-4 pt-[3.5rem] pb-[1.5rem]">
                 <div class="card rounded-3xl p-8">
                     <div class="w-14 h-14 rounded-2xl mx-auto flex items-center justify-center font-display font-black text-black text-2xl"
                         style="background:linear-gradient(135deg,#f5b301,#ff3d00)">S</div>
@@ -470,12 +470,12 @@
 
         <!-- ADMIN -->
         <section id="view-admin" class="hidden">
-            <div class="max-w-7xl mx-auto px-4 md:px-6 py-10" id="adminWrap"></div>
+            <div class="max-w-7xl mx-auto px-4 md:px-6 pt-[3.5rem] pb-[1.8rem]" id="adminWrap"></div>
         </section>
 
         <!-- BACKEND -->
         <section id="view-backend" class="hidden">
-            <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+            <div class="w-full max-w-[1500px] mx-auto px-4 pt-10 pb-[0.8rem]">
                 <div class="font-mono text-xs text-amber-400 tracking-widest">/// COMPLETE PROJECT SOURCE — COPIAR OR
                     BAIXE</div>
                 <h2 class="font-display text-3xl md:text-5xl font-black mt-2">Full-Stack <span
@@ -586,7 +586,7 @@
     </main>
 
     <footer class="border-t border-white/10 bg-black/60 mt-10">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 py-12 grid md:grid-cols-4 gap-8">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 pt-12 pb-4 grid md:grid-cols-4 gap-8">
             <div>
                 <div class="font-display font-bold">SUPERCAR <span class="text-grad">GALLERY</span></div>
                 <p class="text-xs text-gray-500 mt-3 leading-relaxed">Demonstração Full-Stack: lógica do backend Flask

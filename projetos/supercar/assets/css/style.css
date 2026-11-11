@@ -899,7 +899,7 @@ nav button,
     --color-accent-2: #ff6a00;
     --color-accent-3: #ff2d55;
     --color-bg: #06070c;
-    --color-border: rgba(255,255,255,.10);
+    --color-border: rgba(255, 255, 255, .10);
     --color-danger: #ff3355;
     --color-success: #22c55e;
     --color-surface: #0e111c;
@@ -929,7 +929,7 @@ nav button,
     --radius-md: .8rem;
     --radius-sm: .55rem;
     --radius-xl: 1.5rem;
-    --shadow-card: 0 24px 60px -12px rgba(0,0,0,.8);
+    --shadow-card: 0 24px 60px -12px rgba(0, 0, 0, .8);
     --transition-fast: .2s ease;
     --transition-normal: .3s ease;
     /* Escala geral da tipografia (menor que a versão original) */
@@ -940,61 +940,136 @@ nav button,
 }
 
 /* Base global */
-html { font-size: 16px; scroll-behavior: smooth; }
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--color-bg);
     color: var(--color-text);
     font-family: var(--font-body);
     font-size: var(--fs-base);
 }
-.font-display { font-family: var(--font-heading); }
+
+.font-display {
+    font-family: var(--font-heading);
+}
 
 /* Escala das classes tipográficas usadas no HTML (Tailwind CDN) */
-.text-xs, [class~="text-[10px]"], [class~="text-[11px]"] { font-size: var(--fs-xs) !important; }
-.text-sm, [class~="text-[12px]"] { font-size: var(--fs-sm) !important; }
-.text-base { font-size: var(--fs-base) !important; }
-.text-lg { font-size: var(--fs-lg) !important; }
-.text-xl { font-size: var(--fs-xl) !important; }
-.text-2xl { font-size: var(--fs-2xl) !important; }
-.text-3xl { font-size: var(--fs-3xl) !important; }
-.text-4xl { font-size: var(--fs-4xl) !important; }
-.text-5xl { font-size: var(--fs-5xl) !important; }
-.text-6xl { font-size: var(--fs-6xl) !important; }
-.text-7xl { font-size: var(--fs-7xl) !important; }
+.text-xs,
+[class~="text-[10px]"],
+[class~="text-[11px]"] {
+    font-size: var(--fs-xs) !important;
+}
+
+.text-sm,
+[class~="text-[12px]"] {
+    font-size: var(--fs-sm) !important;
+}
+
+.text-base {
+    font-size: var(--fs-base) !important;
+}
+
+.text-lg {
+    font-size: var(--fs-lg) !important;
+}
+
+.text-xl {
+    font-size: var(--fs-xl) !important;
+}
+
+.text-2xl {
+    font-size: var(--fs-2xl) !important;
+}
+
+.text-3xl {
+    font-size: var(--fs-3xl) !important;
+}
+
+.text-4xl {
+    font-size: var(--fs-4xl) !important;
+}
+
+.text-5xl {
+    font-size: var(--fs-5xl) !important;
+}
+
+.text-6xl {
+    font-size: var(--fs-6xl) !important;
+}
+
+.text-7xl {
+    font-size: var(--fs-7xl) !important;
+}
 
 /* Componentes ligados às variáveis */
 .btn-gold {
     background: var(--accent-gradient);
     box-shadow: 0 8px 30px -6px color-mix(in srgb, var(--color-accent) 50%, transparent);
 }
-.btn-gold:hover { box-shadow: 0 16px 40px -6px color-mix(in srgb, var(--color-accent-2) 60%, transparent); }
-.btn-ghost:hover, .pill:hover { border-color: var(--color-accent); }
+
+.btn-gold:hover {
+    box-shadow: 0 16px 40px -6px color-mix(in srgb, var(--color-accent-2) 60%, transparent);
+}
+
+.btn-ghost:hover,
+.pill:hover {
+    border-color: var(--color-accent);
+}
+
 .card {
     border-width: var(--card-border-width);
     border-color: var(--color-border);
     border-radius: var(--radius-card);
 }
+
 .card:hover {
     border-color: color-mix(in srgb, var(--color-accent) 50%, transparent);
     box-shadow: var(--shadow-card);
     transform: translateY(var(--card-hover-lift));
 }
-.navlink { font-size: var(--fs-sm); }
-input, select, textarea {
+
+.navlink {
+    font-size: var(--fs-sm);
+}
+
+input,
+select,
+textarea {
     background: var(--color-surface) !important;
     border-radius: var(--radius-md) !important;
     padding: var(--control-padding-y) var(--control-padding-x) !important;
 }
-input:focus, select:focus, textarea:focus {
+
+input:focus,
+select:focus,
+textarea:focus {
     border-color: var(--color-accent) !important;
 }
-.pill { font-size: var(--fs-sm); }
-#loader { background: var(--color-bg); }
+
+.pill {
+    font-size: var(--fs-sm);
+}
+
+#loader {
+    background: var(--color-bg);
+}
 
 /* Cores de destaque aplicadas às classes utilitárias mais usadas */
-.text-amber-300, .text-amber-400 { color: var(--color-accent) !important; }
-.border-amber-500\/40 { border-color: color-mix(in srgb, var(--color-accent) 40%, transparent) !important; }
-.bg-amber-500\/10 { background-color: color-mix(in srgb, var(--color-accent) 10%, transparent) !important; }
+.text-amber-300,
+.text-amber-400 {
+    color: var(--color-accent) !important;
+}
+
+.border-amber-500\/40 {
+    border-color: color-mix(in srgb, var(--color-accent) 40%, transparent) !important;
+}
+
+.bg-amber-500\/10 {
+    background-color: color-mix(in srgb, var(--color-accent) 10%, transparent) !important;
+}
 
 /* Ajustes responsivos */
 @media (max-width: 767px) {
@@ -1002,5 +1077,38 @@ input:focus, select:focus, textarea:focus {
         --card-hover-lift: -3px;
         --card-image-height: 185px;
         --fs-base: calc(.84rem * var(--font-scale));
+    }
 }
+
+#view-backend {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#view-backend .grid {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin-inline: 0;
+    padding-inline: 0;
+    box-sizing: border-box;
+}
+
+#view-backend pre,
+#view-backend code {
+    max-width: 100%;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
+}
+
+#view-backend img,
+#view-backend iframe,
+#view-backend table {
+    max-width: 100%;
+    box-sizing: border-box;
 }
